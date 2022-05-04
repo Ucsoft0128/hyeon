@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+table {
+    border:1px solid black ;
+    border-collapse: collapse;
+    margin: auto;
+}
+tr {
+    height: 26px;
+}
+th {
+    font-size: 30px;
+    border:1px solid black ;
+    border-collapse: collapse;
+}
+td{
+    border:1px solid black ;
+    border-collapse: collapse;
+    text-align: center;
+  
+}
+footer{
+    text-align: center;
+    font-size: 30px;
+  
+}
+.num {
+    text-align: right;
+    padding-right: 13px;
+}
+
+/*결재칸*/
+.stemp {
+    height: 30px;
+}
+/*칸 띄우기*/
+.pad {
+    margin-top: 5px;
+    width: 100%;
+}
+.claimant {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+
+
+    * {
+
+        box-sizing: border-box;
+
+        -moz-box-sizing: border-box;
+
+        -webkit-font-smoothing: antialiased!important;
+
+    }
+    .page {
+
+        width: 21cm;
+
+        min-height: 29.7cm;
+
+        margin: 1cm auto;
+
+        border-radius: 5px;
+
+        background: white;
+
+    }
+
+
+    .f {
+        width: 100%;
+        margin: auto;
+        padding-top: 10PX;
+    }
+    .l {
+        float: left;
+        width: 50%;
+        margin: auto;
+       
+    }
+    .r {
+        float: left;
+        width: 50%;
+        margin: auto;
+      
+    }
+
+    @page {
+
+        size: A4; /*landscape => 가로방향*/
+
+        margin: 0;
+
+        /*size: landscape;*/
+
+    }
+
+    @media print {
+
+        body{ background: white; }
+
+        #save {display: none;}
+
+        #print {display: none;}
+
+        #capture {
+
+            margin: 0;
+
+            border: initial;
+
+            border-radius: initial;
+
+            width: initial;
+
+            min-height: initial;
+
+            box-shadow: initial;
+
+            background: initial;
+
+            page-break-after: always; /*  .page 클래스로 하는 element 이후 무조건 printing 영역을 분할 하겠다 */
+
+        }
+
+    }
