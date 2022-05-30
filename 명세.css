@@ -1,0 +1,121 @@
+    * {
+
+        margin: 0;
+
+        padding: 0;
+
+        box-sizing: border-box;
+
+        -moz-box-sizing: border-box;
+
+        -webkit-font-smoothing: antialiased!important;
+
+    }
+    .page {
+
+        width: 21cm;
+
+        min-height: 29.7cm;
+
+        margin: 1cm auto;
+
+        border-radius: 5px;
+
+        background: white;
+
+    }
+
+    .subpage {
+
+        height: 270mm;
+
+    }
+
+    @page {
+
+        size: A4; /*landscape => 가로방향*/
+
+        margin: 0;
+
+        /*size: landscape;*/
+
+    }
+
+    @media print {
+
+        body{ background: white; }
+
+        #save {display: none;}
+
+        #print {display: none;}
+
+        #capture {
+
+            margin: 0;
+
+            border: initial;
+
+            border-radius: initial;
+
+            width: initial;
+
+            min-height: initial;
+
+            box-shadow: initial;
+
+            background: initial;
+
+            page-break-after: always; /*  .page 클래스로 하는 element 이후 무조건 printing 영역을 분할 하겠다 */
+
+        }
+       }   
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+table {
+    border:1px solid black ;
+    border-collapse: collapse;
+    width: 90%;
+    height:50%;
+    margin: auto;
+    font-size: 20px;
+    
+}
+th {
+    height: 50px;
+    border:1px solid black ;
+    border-collapse: collapse;
+}
+td {
+    border:1px solid black ;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 8px;
+}
+header {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.num {
+    text-align: right;
+    padding-right: 12px;
+}
+.stemp {
+    height: 30px;
+}
+/*칸 띄우기*/
+.pad {
+    margin-top: 5px;
+}
+.claimant {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+  
